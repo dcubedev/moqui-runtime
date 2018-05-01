@@ -10,5 +10,9 @@
     <!-- NOTE: using the environment variable is relatively secure in a container environment, but for more security set it here instead -->
     <entity-facade crypt-pass="${entity_ds_crypt_pass}" query-stats="true">
         <!-- add datasource elements here to configure databases -->
+        <datasource group-name="transactional" database-conf-name="mysql" schema-name="">
+		     <inline-jdbc jdbc-uri="jdbc:mysql://localhost:3306/MoquiTransactional?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"
+                     jdbc-username="moqui" jdbc-password="moqui" pool-minsize="2" pool-maxsize="50"/>
+	    </datasource>
     </entity-facade>
 </moqui-conf>
