@@ -69,3 +69,12 @@ Desktop.ini
 
 # Linux auto files
 *~
+classes/README
+.project
+base-component/.project
+base-component/webroot/.project
+classes/jackrabbit_moqui.properties
+lib/README
+classes/jackrabbit_moqui.properties
+classes/README
+lib/README
